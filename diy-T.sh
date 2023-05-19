@@ -21,14 +21,14 @@ echo "RELEASE_KEY_PASSWORD=TVBoxOSC" >>$CURRENT_DIR/$DIR/gradle.properties
 
 
 # 主页UI调整 恢复老版；默认多行显示
-cp $CURRENT_DIR/DIY/T/fragment_user.xml $CURRENT_DIR/$DIR/app/src/main/res/layout/fragment_user.xml
+#cp $CURRENT_DIR/DIY/T/fragment_user.xml $CURRENT_DIR/$DIR/app/src/main/res/layout/fragment_user.xml
 
 
 # 默认设置修改
-cp $CURRENT_DIR/DIY/T/App.java $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/base/App.java 
+#cp $CURRENT_DIR/DIY/T/App.java $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/base/App.java 
 
 # 整体布局修改
-cp $CURRENT_DIR/DIY/T/BaseActivity.java $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/base/BaseActivity.java 
+#cp $CURRENT_DIR/DIY/T/BaseActivity.java $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/base/BaseActivity.java 
 
 # 直播添加epg112114支持
 cp $CURRENT_DIR/DIY/T/LivePlayActivity.java $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/ui/activity/LivePlayActivity.java
