@@ -18,7 +18,7 @@ jobs:
         run: git clone -b main --depth=1 https://github.com/takagen99/Box.git
       - name: DIY
         run: |
-          chmod +x diy-T.sh
+          chmod +x diy-T-py.sh
           bash ${{ github.workspace }}/diy-T-py.sh
       - name: Build With Gradle
         run: |
