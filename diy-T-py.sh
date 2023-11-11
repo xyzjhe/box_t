@@ -20,6 +20,15 @@ echo "RELEASE_STORE_PASSWORD=TVBoxOSC" >>$CURRENT_DIR/$DIR/gradle.properties
 echo "RELEASE_KEY_PASSWORD=TVBoxOSC" >>$CURRENT_DIR/$DIR/gradle.properties
 
 
+
+#共存
+sed -i 's/com.github.tvbox.osc/com.xp.yyyBox/g' $CURRENT_DIR/$DIR/app/build.gradle
+
+#名称修改
+sed -i 's/TVBox/TVBox-T(PY)/g' $CURRENT_DIR/$DIR/app/src/main/res/values-zh/strings.xml
+sed -i 's/TVBox/TVBox-T(PY)/g' $CURRENT_DIR/$DIR/app/src/main/res/values/strings.xml
+
+
 # 图标 恢复老版
 #cp $CURRENT_DIR/DIY/T/app_banner.png $CURRENT_DIR/$DIR/app/src/main/res/drawable/app_banner.png
 
